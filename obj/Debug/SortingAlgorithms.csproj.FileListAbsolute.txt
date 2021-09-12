@@ -1,0 +1,10 @@
+D:\c#\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe.config
+D:\c#\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe
+D:\c#\SortingAlgorithms\bin\Debug\SortingAlgorithms.pdb
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.csprojAssemblyReference.cache
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.Form1.resources
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.Properties.Resources.resources
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.GenerateResource.cache
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.exe
+D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.pdb
