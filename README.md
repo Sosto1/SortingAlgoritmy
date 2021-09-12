@@ -1,0 +1,2 @@
+# SortingAlgoritmy
+Soubor tridicich algoritmu
