@@ -143,6 +143,8 @@ namespace SortingAlgorithms
 
 
 
+
+
         public static int[] MergeSort(int[] pole)
         {
             return MergeSortMetoda(pole);
@@ -150,15 +152,17 @@ namespace SortingAlgorithms
 
         private static int[] MergeSortMetoda(int[] pole)
         {
-            if (pole.Length == 1)
+            if (pole.Length == 1)//kdyz ma pole jenom jednu hodnotu 
             {
                 return pole;
             }
 
+
+            //dva listy do kterych se rozdeli hlavli list
             List<int> List_Leva = new List<int>();
             List<int> List_Prava = new List<int>();
 
-            for (int i = 0; i < pole.Length; i++)
+            for (int i = 0; i < pole.Length; i++) //rozdeli pole na pulku a ulozi do listů
             {
                 if (i < pole.Length/2)
                 {
@@ -178,26 +182,28 @@ namespace SortingAlgorithms
             Console.WriteLine("");
 
 
+            //pomoci rekurze rozdeli zbyvajici listy do jednotlivych cisel
             List_Leva = MergeSortMetoda(List_Leva.ToArray()).ToList();
             List_Prava = MergeSortMetoda(List_Prava.ToArray()).ToList();
 
 
 
 
-
+            //zavola metodu merge, která zase tyto pole spojí
             return merge(List_Leva, List_Prava);
         }
 
 
         private static int[] merge(List<int> List_Leva, List<int> List_Prava)
         {
+            //list do ktereho se bude ukladat vysledny retezec
             List<int> ListVysledek = new List<int>();
 
 
-            while (List_Leva.Count > 0 && List_Prava.Count > 0)
+            while (List_Leva.Count > 0 && List_Prava.Count > 0) //dokud nejsou listy prázdné 
             {
-                if (List_Leva.First() <= List_Prava.First())
-                {
+                if (List_Leva[0] <= List_Prava[0]) //postupne se diva na prvni indexy listu a kdyz neni mensi v levo (2 itemu v listu) tak je prehodi
+                {                   //taky muzem pouzit .First()
                     PresunHodnoty(List_Leva, ListVysledek);
                 }
                 else
@@ -221,9 +227,9 @@ namespace SortingAlgorithms
             return ListVysledek.ToArray() ;
         }
 
-        private static void PresunHodnoty(List<int> list, List<int> Vysledek)
+        private static void PresunHodnoty(List<int> list, List<int> Vysledek) //presune prvni hodnotu listu do vysledneho listu
         {
-            Vysledek.Add(list.First());
+            Vysledek.Add(list[0]);
             list.RemoveAt(0);
         }
 
