@@ -16,7 +16,7 @@ namespace SortingAlgorithms
         {
             InitializeComponent();
         }
-        int[] array = new int[50] /*{4,7,8,0,1,2,6,3,5,10,9}*/;
+        int[] array = new int[10] /*{4,7,8,0,1,2,6,3,5,10,9}*/;
         private void Form1_Load(object sender, EventArgs e)
         {
             FillArray(array);
@@ -24,7 +24,7 @@ namespace SortingAlgorithms
         void FillArray(int[] array)
         {
             Random rnd = new Random();
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 array[i] = rnd.Next(0, 1000);
             }
@@ -74,6 +74,12 @@ namespace SortingAlgorithms
            // Console.WriteLine("--------");
         }
 
-        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ShowArray(array);
+
+            int[] array2 = Algorithms.MergeSort(array);
+            ShowArray(array2);
+        }
     }
 }

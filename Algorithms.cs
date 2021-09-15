@@ -56,7 +56,7 @@ namespace SortingAlgorithms
        
 
 
-        public static int[] QuickSortMetoda(int[] pole, int Zacatek, int Konec) //extrem tohle
+        private static int[] QuickSortMetoda(int[] pole, int Zacatek, int Konec) //extrem tohle
         {
             int Pivot = pole[(Zacatek + Konec) / 2]; //pivot bude prostredek pole
 
@@ -139,6 +139,105 @@ namespace SortingAlgorithms
             }
 
             return pole;
+        }
+
+
+
+        public static int[] MergeSort(int[] pole)
+        {
+            return MergeSortMetoda(pole);
+        }
+
+        private static int[] MergeSortMetoda(int[] pole)
+        {
+            if (pole.Length == 1)
+            {
+                return pole;
+            }
+
+            List<int> List_Leva = new List<int>();
+            List<int> List_Prava = new List<int>();
+
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (i < pole.Length/2)
+                {
+                    List_Leva.Add(pole[i]);
+                }
+                else
+                {
+                    List_Prava.Add(pole[i]);
+                }
+            }
+
+            
+            Console.WriteLine("\n Leva strana");
+            VypisPole(List_Leva);
+            Console.WriteLine("\n Prava strana");
+            VypisPole(List_Prava);
+            Console.WriteLine("");
+
+
+            List_Leva = MergeSortMetoda(List_Leva.ToArray()).ToList();
+            List_Prava = MergeSortMetoda(List_Prava.ToArray()).ToList();
+
+
+
+
+
+            return merge(List_Leva, List_Prava);
+        }
+
+
+        private static int[] merge(List<int> List_Leva, List<int> List_Prava)
+        {
+            List<int> ListVysledek = new List<int>();
+
+
+            while (List_Leva.Count > 0 && List_Prava.Count > 0)
+            {
+                if (List_Leva.First() <= List_Prava.First())
+                {
+                    PresunHodnoty(List_Leva, ListVysledek);
+                }
+                else
+                {
+                    PresunHodnoty(List_Prava, ListVysledek);
+                }
+            }
+
+            while (List_Leva.Count > 0)
+            {
+                PresunHodnoty(List_Leva, ListVysledek);
+            }
+
+            while (List_Prava.Count > 0)
+            {
+                PresunHodnoty(List_Prava, ListVysledek);
+            }
+
+
+
+            return ListVysledek.ToArray() ;
+        }
+
+        private static void PresunHodnoty(List<int> list, List<int> Vysledek)
+        {
+            Vysledek.Add(list.First());
+            list.RemoveAt(0);
+        }
+
+
+
+
+
+
+        private static void VypisPole(List<int> list)
+        {
+            foreach (var item in list)
+            {
+                Console.Write(item + " ,");
+            }
         }
 
     }

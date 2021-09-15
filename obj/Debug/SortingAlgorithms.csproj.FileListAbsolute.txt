@@ -8,3 +8,13 @@ D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.GenerateResource.cach
 D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
 D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.exe
 D:\c#\SortingAlgorithms\obj\Debug\SortingAlgorithms.pdb
+D:\c#\SortingAlgorithms\SortingAlgoritmy\bin\Debug\SortingAlgorithms.exe.config
+D:\c#\SortingAlgorithms\SortingAlgoritmy\bin\Debug\SortingAlgorithms.exe
+D:\c#\SortingAlgorithms\SortingAlgoritmy\bin\Debug\SortingAlgorithms.pdb
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csprojAssemblyReference.cache
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.Form1.resources
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.Properties.Resources.resources
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.GenerateResource.cache
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.exe
+D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.pdb
