@@ -18,3 +18,13 @@ D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.Gene
 D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
 D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.exe
 D:\c#\SortingAlgorithms\SortingAlgoritmy\obj\Debug\SortingAlgorithms.pdb
+C:\D\C#\SortingAlgoritmy\bin\Debug\SortingAlgorithms.exe.config
+C:\D\C#\SortingAlgoritmy\bin\Debug\SortingAlgorithms.exe
+C:\D\C#\SortingAlgoritmy\bin\Debug\SortingAlgorithms.pdb
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.AssemblyReference.cache
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.Form1.resources
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.Properties.Resources.resources
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.GenerateResource.cache
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.exe
+C:\D\C#\SortingAlgoritmy\obj\Debug\SortingAlgorithms.pdb

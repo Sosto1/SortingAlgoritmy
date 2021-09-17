@@ -35,7 +35,7 @@ namespace SortingAlgorithms
         {
             ShowArray(array);
 
-            int[] array2 = Algorithms.BasicSort(array);
+            int[] array2 = Algorithms.SelectionSort(array);
             ShowArray(array2);
         }
 
@@ -68,7 +68,7 @@ namespace SortingAlgorithms
             {
                 Console.Write(item + " ,");
             }
-
+            Console.WriteLine("\n");
 
           //  Console.WriteLine("Neco");
            // Console.WriteLine("--------");
@@ -79,6 +79,14 @@ namespace SortingAlgorithms
             ShowArray(array);
 
             int[] array2 = Algorithms.MergeSort(array);
+            ShowArray(array2);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ShowArray(array);
+
+            int[] array2 = Algorithms.InsertSort(array);
             ShowArray(array2);
         }
     }

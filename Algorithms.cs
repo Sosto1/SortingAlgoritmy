@@ -8,7 +8,7 @@ namespace SortingAlgorithms
 {
     static class Algorithms
     {
-        public static int[] BasicSort(int [] array)
+        public static int[] SelectionSort(int [] array)
         {
             for (int i = 0; i < array.Length; i++) //jede pro kazdy item v poli
             {
@@ -31,7 +31,7 @@ namespace SortingAlgorithms
         {
             for (int l = 0; l < pole.Length; l++) //jede pro kazdy item v poli
             {
-
+                bool Zmena = false;
                 for (int i = 0; i < pole.Length - 1; i++) //na konci cyklu dostane vzdy nejvetsi na konec pole
                 {
                     if (pole[i] > pole[i + 1]) //porovna vzdycky DVE HODNOTY vedle sebe, leva a prava a potom rozhoda zda je prohodit
@@ -41,21 +41,47 @@ namespace SortingAlgorithms
                         int pom = pole[i + 1];
                         pole[i + 1] = pole[i];
                         pole[i] = pom;
+                        Zmena = true;
                     }
+                }
+                if (!Zmena)
+                {
+                    return pole;
                 }
             }
             
             return pole;
         }
 
+        public static int[] InsertSort(int[] pole)
+        {
+            for (int i = 1; i < pole.Length; i++)
+            {
+                bool zmena = false;
+                for (int j = i; j > 0; j--)
+                {
+                    if (pole[j - 1] > pole[j])
+                    {
+                        int pom = pole[j - 1];
+                        pole[j - 1] = pole[j];
+                        pole[j] = pom;
+                        zmena = true;
+                    }
+                    if (!zmena)
+                    {
+                        break; //pouzití break protože chceme skocit do outer for ne uplne preskocit zbytek metody
+                    }
+                }
+            }
+            return pole;
+        }
+
+
 
         public static int[] QuickSort(int[] pole)
         {
             return QuickSortMetoda(pole, 0, pole.Length - 1);
         }
-       
-
-
         private static int[] QuickSortMetoda(int[] pole, int Zacatek, int Konec) //extrem tohle
         {
             int Pivot = pole[(Zacatek + Konec) / 2]; //pivot bude prostredek pole
@@ -232,11 +258,6 @@ namespace SortingAlgorithms
             Vysledek.Add(list[0]);
             list.RemoveAt(0);
         }
-
-
-
-
-
 
         private static void VypisPole(List<int> list)
         {
