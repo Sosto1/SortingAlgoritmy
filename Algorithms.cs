@@ -8,24 +8,26 @@ namespace SortingAlgorithms
 {
     static class Algorithms
     {
-        public static int[] SelectionSort(int [] array)
+        public static int[] SelectionSort(int [] pole)
         {
-            for (int i = 0; i < array.Length; i++) //jede pro kazdy item v poli
+            for (int i = 0; i < pole.Length; i++) //jede pro kazdy item v poli
             {
-                for (int j = 0; j < array.Length; j++) //na konci dostane vzdy nejmensi na zacatek
+                for (int j = 0; j < pole.Length; j++) //na konci dostane vzdy nejmensi na zacatek
                 {
-                    if (array[j] > array[i])// vezme jednu levou hodnotu a POROVNAVA JI S KAZDOU
+                    if (pole[j] > pole[i])// vezme jednu levou hodnotu a POROVNAVA JI S KAZDOU
                     {
                         //kdyz zjiste ze leva ja vetsi prohodí se a pokracuje dale
-                        int pom = array[i];
-                        array[i] = array[j];
-                        array[j] = pom;
+                        int pom = pole[i];
+                        pole[i] = pole[j];
+                        pole[j] = pom;
 
                     }
                 }
-                
+                VypisPole(pole.ToList());
+
+
             }
-            return array;
+            return pole;
         }
         public static int[] BubbleSort(int[] pole)
         {
@@ -48,6 +50,7 @@ namespace SortingAlgorithms
                 {
                     return pole;
                 }
+                VypisPole(pole.ToList());
             }
             
             return pole;
@@ -72,6 +75,7 @@ namespace SortingAlgorithms
                         break; //pouzití break protože chceme skocit do outer for ne uplne preskocit zbytek metody
                     }
                 }
+                VypisPole(pole.ToList());
             }
             return pole;
         }
@@ -265,6 +269,7 @@ namespace SortingAlgorithms
             {
                 Console.Write(item + " ,");
             }
+            Console.WriteLine();
         }
 
     }

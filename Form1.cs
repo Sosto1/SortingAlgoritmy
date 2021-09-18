@@ -64,6 +64,7 @@ namespace SortingAlgorithms
 
         public void ShowArray(int[] array)
         {
+            Console.WriteLine("\npole");
             foreach (var item in array)
             {
                 Console.Write(item + " ,");
